@@ -22,3 +22,73 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  width: 300px;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+form .control-group {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+form .control-group label,
+form .control-group input {
+  display: block;
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+form .control-group label {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  pointer-events: none;
+  transform-origin: top left;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  transition: transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+}
+
+form .control-group.active label {
+  transform: translate3d(0,-15px,0) scale(.85,.85);
+  -webkit-transform: translate3d(0,-15px,0) scale(.85,.85);
+  transition: transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+}
+
+form .control-group input {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  font-size: 14px;
+}
+
+form .control-group input:focus { border-bottom: 1px solid rgba(0,0,0,1); }
+
+form .form-actions button {
+  width: 100%;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+
