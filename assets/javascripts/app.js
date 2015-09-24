@@ -1,5 +1,4 @@
-var fields = document.querySelectorAll('.control-group input'),
-    labels = document.querySelectorAll('.control-group label');
+var fields = document.querySelectorAll('.control-group input');
 
 function activeLabel() {
   Array.prototype.forEach.call(fields, function(el) {
