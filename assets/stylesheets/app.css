@@ -41,9 +41,11 @@ fieldset {
 
 form .control-group {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: left;
 }
+
+form .control-group:first-child { margin-bottom: 30px; }
 
 form .control-group label,
 form .control-group input {
