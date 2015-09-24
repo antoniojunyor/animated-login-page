@@ -93,3 +93,67 @@ form .form-actions button {
 }
 
 
+form .control-group:nth-child(1),
+form .control-group:nth-child(2),
+form .form-actions {
+  -webkit-animation-name: slide;
+  -moz-animation-name: slide;
+  animation-name: slide;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+}
+
+form .control-group:nth-child(1) {
+  -webkit-animation-duration: .8s;
+  -moz-animation-duration: .8s;
+  animation-duration: .8s;
+}
+
+form .control-group:nth-child(2) {
+ -webkit-animation-duration: 1s;
+ -moz-animation-duration: 1s;
+ animation-duration: 1s;
+}
+
+form .form-actions {
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate3d(0,600%,0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes slide {
+  0% {
+    -moz-transform: translate3d(0,600%,0);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0,600%,0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
