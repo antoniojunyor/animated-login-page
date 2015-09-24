@@ -86,12 +86,17 @@ form .control-group input:focus { border-bottom: 1px solid rgba(0,0,0,1); }
 form .form-actions button {
   width: 100%;
   border: 1px solid #000;
-  background-color: #000;
+  background-color: rgba(0,0,0,1);
   color: #fff;
   padding: 10px 15px;
   font-size: 14px;
+  cursor: pointer;
 }
 
+form .form-actions button:hover,
+form .form-actions button:focus { opacity: .8; }
+
+form .form-actions button:active { opacity: .6; }
 
 form .control-group:nth-child(1),
 form .control-group:nth-child(2),
