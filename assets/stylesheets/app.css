@@ -101,12 +101,14 @@ form .form-actions button:active { opacity: .6; }
 form .control-group:nth-child(1),
 form .control-group:nth-child(2),
 form .form-actions {
-  -webkit-animation-name: slide;
-  -moz-animation-name: slide;
-  animation-name: slide;
+  -webkit-animation-name: slidefade;
+  -moz-animation-name: slidefade;
+  animation-name: slidefade;
+
   -webkit-animation-timing-function: ease-in-out;
   -moz-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+
   -webkit-animation-direction: normal;
   -moz-animation-direction: normal;
   animation-direction: normal;
@@ -130,7 +132,7 @@ form .form-actions {
   animation-duration: 1.2s;
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes slidefade {
   0% {
     -webkit-transform: translate3d(0,600%,0);
     opacity: 0;
@@ -141,7 +143,7 @@ form .form-actions {
   }
 }
 
-@-moz-keyframes slide {
+@-moz-keyframes slidefade {
   0% {
     -moz-transform: translate3d(0,600%,0);
     opacity: 0;
@@ -152,7 +154,7 @@ form .form-actions {
   }
 }
 
-@keyframes slide {
+@keyframes slidefade {
   0% {
     transform: translate3d(0,600%,0);
     opacity: 0;
