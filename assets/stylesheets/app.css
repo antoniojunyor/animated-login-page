@@ -59,6 +59,7 @@ form .control-group label {
   position: absolute;
   top: 2px;
   left: 0;
+  text-transform: uppercase;
   pointer-events: none;
   transform-origin: top left;
   -webkit-transform-origin: top left;
