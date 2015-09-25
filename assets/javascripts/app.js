@@ -1,6 +1,6 @@
 var fields = document.querySelectorAll('.control-group input');
 
-function activeLabel() {
+function activeControlGroup() {
   Array.prototype.forEach.call(fields, function(el) {
     el.addEventListener('keyup', function() {
       if (el.value !== '') {
@@ -12,4 +12,4 @@ function activeLabel() {
   });
 }
 
-activeLabel();
+activeControlGroup();
