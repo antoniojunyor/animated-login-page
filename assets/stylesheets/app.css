@@ -13,7 +13,7 @@ body {
   display: table;
   width: 100%;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased ;
+  -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -99,6 +99,8 @@ form .form-actions button {
   color: #fff;
   padding: 10px 15px;
   font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: .8px;
   cursor: pointer;
 }
 
